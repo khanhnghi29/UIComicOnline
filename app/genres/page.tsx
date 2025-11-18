@@ -2,8 +2,9 @@
 // app/genres/page.tsx
 import Link from 'next/link';
 import { GenreDto } from '@/app/types';
-import { i } from 'motion/react-client';
 import { API_CONFIG } from '@/config/api'; // Import config
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 async function fetchGenres() {
   const res = await fetch(`${API_CONFIG.BASE_URL}/api/Genres`, { cache: 'no-store' });

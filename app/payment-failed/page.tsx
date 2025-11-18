@@ -21,13 +21,13 @@ const ERROR_MESSAGES: { [key: string]: string } = {
   '99': 'Lỗi không xác định'
 };
 
-export default function PaymentFailedPage() {
+
+function PaymentFailedContent(){
   const searchParams = useSearchParams();
   const code = searchParams?.get('code') || '99';
   const errorMessage = ERROR_MESSAGES[code] || 'Đã có lỗi xảy ra trong quá trình thanh toán';
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
       <div className="min-h-screen bg-gradient-to-br from-red-50 to-orange-50 flex items-center justify-center p-4">
         <div className="max-w-md w-full bg-white rounded-2xl shadow-2xl p-8">
           {/* Error Icon */}
@@ -87,6 +87,12 @@ export default function PaymentFailedPage() {
           </div>
         </div>
       </div>
-  </Suspense>
+  );
+}
+export default function PaymentFailedPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <PaymentFailedContent />
+    </Suspense>
   );
 }

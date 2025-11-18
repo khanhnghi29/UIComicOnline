@@ -8,6 +8,9 @@ import NavbarSearch from './components/NavbarSearch';
 import { Suspense } from 'react';
 import { API_CONFIG } from '@/config/api'; // Import config
 //const API_CONFIG.BASE_URL = 'http://localhost:5244';
+// Thêm dòng này để đánh dấu route là dynamic
+export const dynamic = 'force-dynamic';
+
 function ComicSkeleton() {
 return(
   <div className='bg-white rounded-lg shadow-md p-4 animate-pulse'>
