@@ -34,7 +34,7 @@ export default async function SearchPage({ searchParams }: { searchParams: Promi
     console.log('Rendered comics:', comics); // Debug full comics data
 
     if (comics.length === 0) {
-      return <div className="text-gray-600 text-center mt-10">Không tìm thấy kết quả cho "{query}".</div>;
+      return <div className="text-gray-600 text-center mt-10">Không tìm thấy kết quả cho &quot;{query}&quot;.</div>;
     }
 
     return (

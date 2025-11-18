@@ -116,7 +116,7 @@ export default function PaymentModal({
                 <FaCheckCircle className="text-blue-600 text-2xl mt-1" />
                 <div className="flex-1">
                   <h4 className="text-xl font-bold text-gray-800 mb-2">
-                    Mua truyện "{comicTitle}"
+                    Mua truyện &quot;{comicTitle}&quot;
                   </h4>
                   <p className="text-gray-600 mb-4">
                     Sở hữu vĩnh viễn và đọc mọi lúc mọi nơi

@@ -147,7 +147,7 @@ export default function AdminDashboard() {
                 </div>
                 <div className="min-w-0 flex-1">
                   <p className="text-sm font-medium text-gray-900">
-                    New comic "One Piece" added
+                    New comic ABCxyz added
                   </p>
                   <p className="text-sm text-gray-500">2 hours ago</p>
                 </div>
@@ -161,7 +161,7 @@ export default function AdminDashboard() {
                 </div>
                 <div className="min-w-0 flex-1">
                   <p className="text-sm font-medium text-gray-900">
-                    Author "Eiichiro Oda" updated
+                    {`Author "Eiichiro Oda" updated`}
                   </p>
                   <p className="text-sm text-gray-500">1 day ago</p>
                 </div>
@@ -175,7 +175,7 @@ export default function AdminDashboard() {
                 </div>
                 <div className="min-w-0 flex-1">
                   <p className="text-sm font-medium text-gray-900">
-                    Genre "Shonen" created
+                    {`Genre "Shonen" created`}
                   </p>
                   <p className="text-sm text-gray-500">3 days ago</p>
                 </div>
