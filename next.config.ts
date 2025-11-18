@@ -15,6 +15,7 @@ const nextConfig: NextConfig = {
     // Nếu sau này còn lỗi TypeScript thì cũng bỏ qua (tùy chọn)
     ignoreBuildErrors: true,
   },
+  output: 'standalone',   // hoặc có thể dùng undefined (default serverful)
 };
 
 export default nextConfig;
