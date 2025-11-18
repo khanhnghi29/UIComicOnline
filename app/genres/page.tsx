@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { GenreDto } from '@/app/types';
 import { i } from 'motion/react-client';
 import { API_CONFIG } from '@/config/api'; // Import config
-//const API_CONFIG.BASE_URL = 'http://localhost:5244';
 
 async function fetchGenres() {
   const res = await fetch(`${API_CONFIG.BASE_URL}/api/Genres`, { cache: 'no-store' });

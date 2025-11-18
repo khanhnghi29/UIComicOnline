@@ -2,7 +2,6 @@ import axios, { AxiosError, AxiosResponse } from 'axios';
 import { JwtPayload } from 'jwt-decode';
 import { isValidJwtPayload, ParsedJwtPayload, parseJwtPayload } from '../types';
 import { API_CONFIG } from '@/config/api'; // Import config
-//const API_CONFIG.BASE_URL = 'http://localhost:5244';
 
 // API Configuration constants
 export const API_CONFIG_URL = {
