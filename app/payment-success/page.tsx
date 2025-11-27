@@ -1,12 +1,12 @@
 // app/payment-success/page.tsx
 'use client';
 
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { FaCheckCircle, FaBook, FaCrown } from 'react-icons/fa';
 
-export default function PaymentSuccessPage() {
+function PaymentSuccessContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const [countdown, setCountdown] = useState(5);
@@ -104,5 +104,13 @@ export default function PaymentSuccessPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function PaymentSuccessPage() {
+  return (
+  <Suspense fallback={<div>Loading...</div>}>
+    <PaymentSuccessContent />
+    </Suspense>
   );
 }
